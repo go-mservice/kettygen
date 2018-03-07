@@ -24,7 +24,7 @@ func main() {
 
 	gopath := os.Getenv("GOPATH")
 	if gopath != "" {
-		args = append([]string{"-I" + gopath + "/src/github.com/yyzybb537/ketty/pbinclude"}, args...)
+		args = append([]string{"-I" + gopath + "/src/github.com/yyzybb537/protoc-gen-ketty/include"}, args...)
 		args = append([]string{"-I."}, args...)
 	}
 
